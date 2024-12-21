@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulus - Belajar Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-700 text-white fade-in">
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <a href="#" class="text-2xl font-bold hover:text-gray-300 transition-colors">Kalkulus</a>
+      <button id="menu-btn" class="block md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 fade-in">
+      <ul class="flex flex-col space-y-2 py-4">
+        <li><a href="persamaan.html" class="block text-center py-2 hover:bg-gray-600">Persamaan Kuadrat</a></li>
+        <li><a href="pertidaksamaan.html" class="block text-center py-2 hover:bg-gray-600">Pertidaksamaan Kuadrat</a></li>
+        <li><a href="turunan.html" class="block text-center py-2 hover:bg-gray-600">Turunan</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-8 fade-in">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold">Selamat Datang di Website Kalkulus</h1>
+      <p class="text-xl font-medium text-gray-600 mt-4">Pelajari Persamaan Kuadrat, Pertidaksamaan Kuadrat, dan Turunan dengan Mudah</p>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="container mx-auto py-8">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    </section>
+  </main>
+  <!-- Persamaan Kuadrat: persamaan.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persamaan Kuadrat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-blue-600 text-white py-4 text-center">
+    <h1 class="text-3xl font-bold">Persamaan Kuadrat</h1>
+  </header>
+  <main class="container mx-auto py-8">
+    <section class="bg-white shadow-md rounded-lg p-6">
+      <h2 class="text-2xl font-bold">Pengertian Persamaan Kuadrat</h2>
+      <p class="mt-4">Persamaan kuadrat adalah persamaan dengan derajat tertinggi dua. Bentuk umum dari persamaan kuadrat adalah:</p>
+      <p class="font-mono text-lg mt-2">ax² + bx + c = 0</p>
+      <p>Di mana a, b, dan c adalah konstanta, serta a ≠ 0. Nilai-nilai ini disebut koefisien.</p>
+
+      <h2 class="text-xl font-bold mt-6">Metode Penyelesaian</h2>
+      <h3 class="text-lg font-semibold mt-4">1. Faktorisasi</h3>
+      <p>Metode ini digunakan jika persamaan dapat difaktorkan menjadi dua bentuk linear.</p>
+      <p class="mt-2">Contoh:</p>
+      <p>x² - 5x + 6 = 0</p>
+      <p>Faktor dari persamaan ini adalah:</p>
+      <p>(x - 2)(x - 3) = 0</p>
+      <p>Sehingga solusi dari x adalah:</p>
+      <p>x = 2 atau x = 3</p>
+
+      <h3 class="text-lg font-semibold mt-4">2. Rumus Kuadrat</h3>
+      <p>Jika faktorisasi tidak memungkinkan, kita dapat menggunakan rumus kuadrat:</p>
+      <p class="font-mono">x = [-b ± √(b² - 4ac)] / 2a</p>
+      <p class="mt-2">Contoh:</p>
+      <p>x² + 4x - 5 = 0</p>
+      <p>Dengan a = 1, b = 4, dan c = -5, maka:</p>
+      <p>x = [-4 ± √(4² - 4(1)(-5))] / 2(1)</p>
+      <p>x = [-4 ± √(16 + 20)] / 2</p>
+      <p>x = [-4 ± 6] / 2</p>
+      <p>Sehingga:</p>
+      <p>x = 1 atau x = -5</p>
+
+      <h3 class="text-lg font-semibold mt-4">3. Melengkapkan Kuadrat</h3>
+      <p>Metode ini melibatkan manipulasi aljabar untuk mengubah bentuk persamaan menjadi kuadrat sempurna.</p>
+      <p class="mt-2">Contoh:</p>
+      <p>x² + 6x + 5 = 0</p>
+      <p>Langkah-langkahnya adalah:</p>
+      <ol class="list-decimal pl-6 mt-2">
+        <li>Pindahkan konstanta: x² + 6x = -5</li>
+        <li>Tambahkan ½(b)² ke kedua sisi: x² + 6x + 9 = 4</li>
+        <li>Faktorkan sisi kiri: (x + 3)² = 4</li>
+        <li>Selesaikan untuk x: x + 3 = ±2, sehingga x = -1 atau x = -5</li>
+      </ol>
+
+      <h2 class="text-xl font-bold mt-6">Aplikasi Persamaan Kuadrat</h2>
+      <p>Persamaan kuadrat banyak digunakan dalam berbagai bidang seperti fisika, ekonomi, teknik, dan statistik. Contohnya adalah menghitung lintasan benda yang dilempar, optimasi keuntungan, atau menganalisis fungsi profit dalam bisnis.</p>
+    </section>
+  </main>
+</body>
+</html>
+
+<!-- Pertidaksamaan Kuadrat: pertidaksamaan.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertidaksamaan Kuadrat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-green-600 text-white py-4 text-center">
+    <h1 class="text-3xl font-bold">Pertidaksamaan Kuadrat</h1>
+  </header>
+  <main class="container mx-auto py-8">
+    <section class="bg-white shadow-md rounded-lg p-6">
+      <h2 class="text-2xl font-bold">Pengertian Pertidaksamaan Kuadrat</h2>
+      <p class="mt-4">Pertidaksamaan kuadrat melibatkan ekspresi kuadrat yang berkaitan dengan tanda ketidaksamaan seperti <, ≤, >, atau ≥. Pertidaksamaan ini sering digunakan dalam analisis interval dan solusi yang sesuai untuk nilai x dalam rentang tertentu.</p>
+
+      <h2 class="text-xl font-bold mt-6">Metode Penyelesaian</h2>
+      <h3 class="text-lg font-semibold mt-4">1. Membuat Grafik</h3>
+      <p>Langkah ini melibatkan menggambar grafik parabola untuk menentukan kapan ekspresi kuadrat bernilai positif atau negatif.</p>
+
+      <h3 class="text-lg font-semibold mt-4">2. Tes Nilai Interval</h3>
+      <p>Contoh:</p>
+      <p>2x² - x - 1 > 0</p>
+      <ol class="list-decimal pl-6 mt-2">
+        <li>Faktorkan menjadi (2x - 1)(x + 1) > 0</li>
+        <li>Tentukan akar-akar persamaan: x = ½ dan x = -1</li>
+        <li>Cek tanda pada interval: (-∞, -1), (-1, ½), (½, ∞)</li>
+      </ol>
+      <h4 class="text-xl font-bold mt-6">Contoh Soal</h4>
+      <p>Temukan solusi dari pertidaksamaan: <strong>x² - 3x - 4 > 0</strong></p>
+      <p>Penyelesaian:</p>
+      <ol class="list-decimal pl-6 mt-2">
+        <li>Faktorkan menjadi: (x - 4)(x + 1) > 0.</li>
+        <li>Tentukan akar-akarnya: x = 4 dan x = -1.</li>
+        <li>Analisis tanda pada interval:</li>
+        <ul class="list-disc pl-8">
+          <li>Untuk x < -1, tanda positif.</li>
+          <li>Untuk -1 < x < 4, tanda negatif.</li>
+          <li>Untuk x > 4, tanda positif.</li>
+        </ul>
+        <li>Solusi: x ∈ (-∞, -1) ∪ (4, ∞).</li>
+      </ol>
+
+      <h2 class="text-xl font-bold mt-6">Aplikasi Pertidaksamaan Kuadrat</h2>
+      <p>Digunakan untuk menentukan area aman dalam rekayasa teknik, risiko dalam investasi, atau titik optimal dalam manajemen proyek.</p>
+    </section>
+  </main>
+</body>
+</html>
+
+<!-- Turunan: turunan.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turunan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-purple-600 text-white py-4 text-center">
+    <h1 class="text-3xl font-bold">Turunan</h1>
+  </header>
+  <main class="container mx-auto py-8">
+    <section class="bg-white shadow-md rounded-lg p-6">
+      <h2 class="text-2xl font-bold">Pengertian Turunan</h2>
+      <p class="mt-4">Turunan adalah konsep kalkulus yang menentukan laju perubahan suatu fungsi terhadap variabel independennya. Turunan memberikan informasi tentang kemiringan kurva fungsi di suatu titik tertentu.</p>
+
+      <h2 class="text-xl font-bold mt-6">Aturan Turunan</h2>
+      <h3 class="text-lg font-semibold mt-4">1. Turunan Fungsi Polinomial</h3>
+      <p>Jika f(x) = axⁿ, maka f'(x) = n * ax⁾ⁿ⁻¹.</p>
+
+      <h3 class="text-lg font-semibold mt-4">2. Aturan Rantai</h3>
+      <p>Jika f(x) = g(h(x)), maka f'(x) = g'(h(x)) * h'(x).</p>
+      <h3 class="text-lg font-semibold mt-4">Contoh Soal. <p></p>
+        1.Turunan Fungsi Polinomial</h2>
+            <p>Diketahui fungsi <strong>f(x) = 3x<sup>3</sup> - 5x<sup>2</sup> + 2x - 7</strong>. Tentukan turunan pertama <strong>f'(x)</strong>.</p>
+            <h3>Penyelesaian</h3>
+            <ol>
+                <li>Turunkan setiap suku fungsi:</li>
+                <pre>
+- Untuk 3x<sup>3</sup>: d/dx(3x<sup>3</sup>) = 9x<sup>2</sup>
+- Untuk -5x<sup>2</sup>: d/dx(-5x<sup>2</sup>) = -10x
+- Untuk 2x: d/dx(2x) = 2
+- Untuk -7: d/dx(-7) = 0
+                </pre>
+                <li>Gabungkan hasil turunan:</li>
+                <pre>f'(x) = 9x<sup>2</sup> - 10x + 2</pre>
+            </ol><p></p>
+
+            <h3 class="text-lg font-semibold mt-4">2. Turunan Fungsi Trigonometri</h2>
+            <p>Diketahui fungsi <strong>g(x) = 2sin(x) + 3cos(x)</strong>. Tentukan turunan pertama <strong>g'(x)</strong>.</p>
+            <h3>Penyelesaian</h3>
+            <ol>
+                <li>Gunakan aturan turunan fungsi trigonometri:</li>
+                <pre>
+- d/dx(sin(x)) = cos(x)
+- d/dx(cos(x)) = -sin(x)
+                </pre>
+                <li>Turunkan setiap suku fungsi:</li>
+                <pre>
+- Untuk 2sin(x): d/dx(2sin(x)) = 2cos(x)
+- Untuk 3cos(x): d/dx(3cos(x)) = -3sin(x)
+                </pre>
+                <li>Gabungkan hasil turunan:</li>
+                <pre>g'(x) = 2cos(x) - 3sin(x)</pre>
+            </ol>
+
+      <h2 class="text-xl font-bold mt-6">Aplikasi Turunan</h2>
+      <p>Turunan digunakan dalam optimasi (menentukan maksimum dan minimum), analisis fisik (kecepatan, percepatan), dan banyak bidang lainnya seperti ekonomi untuk analisis margin dan keuangan.</p>
+    </section>
+  </main>
+</body>
+</html>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>©  Muhammad Agis Maulana_411241046
+        <p> ©2024</p>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+
+
